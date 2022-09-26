@@ -1,0 +1,76 @@
+---
+a: 'sdfsf'
+---
+
+{{!< main}}
+ {{!-- ССылки для перемещения по страницам ошибок --}} 
+  <div
+    style="display: flex; gap: 20px; align-items: center;">Сcылки для перемещения по страницам
+    <p><a href="../page-404/page-404.hbs">Страница 404</a></p>
+    <p><a href="../page-500/page-500.hbs">Страница 500</a></p>
+    <p><a href="../registrate/registrate.hbs">Страница регистрация</a></p>
+  </div>
+
+
+  <main class="index">
+    <aside class="side-bar">
+      <a class="side-bar__link" href="../profile/profile.hbs">Профиль &nbsp;
+        <svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M1 9L5 5L1 1" stroke="#999999"></path>
+        </svg></a>
+
+      {{> 'search/search'}}
+
+      <ul class="chat-list">
+        {{#each chats}}
+        {{> 'chat/chat' }}
+        {{/each}}
+      </ul>
+    </aside>
+
+    <section class="messages">
+      <div class="messages__header">
+        <div class="messages__avatar"></div>
+        <p class="messages__name">Вадим</p>
+        {{> 'check-box/check-box-user' }}
+      </div>
+
+      <section class="messages__field">
+        <p class="messages__date">19 июня</p>
+
+        <div class="message">
+          <p class="message__text">Привет! Смотри, тут всплыл интересный кусок лунной космической истории — НАСА в
+            какой-то момент попросила Хассельблад адаптировать модель SWC для полетов на Луну. Сейчас мы все знаем что
+            астронавты летали с моделью 500 EL — и к слову говоря, все тушки этих камер все еще находятся на поверхности
+            Луны, так как астронавты с собой забрали только кассеты с пленкой. </p>
+          <p class="message__text">
+            Хассельблад в итоге адаптировал SWC для космоса, но что-то пошло не так и на ракету
+            они так никогда и не попали. Всего их было произведено 25 штук, одну из них недавно продали на аукционе за
+            45000 евро.
+          </p>
+          <p class="message__time"> 11:56 </p>
+        </div>
+
+        <div class="message message_photo">
+          <img src="../../asserts/message__photo.jpg" alt="фото" class="message__photo">
+          <p class="message__time message__time_photo">11:56</p>
+        </div>
+
+        <div class="message message_own">
+          <p class="message__text">Круто! </p>
+          <p class="message__time message__time_own">
+            <img class="message__checked" alt="Просмотрено" src="../../asserts/message__checked.svg">25:56
+          </p>
+        </div>
+
+      </section>
+
+      <form class="messages__form">
+        {{> 'check-box/check-box-search' }}
+        <input class="messages__input" placeholder="Сообщение" type="text" name="message" required minlength="2"
+          maxlength="30" />
+        <button class="messages__btn-submit"></button>
+      </form>
+
+    </section>
+  </main>

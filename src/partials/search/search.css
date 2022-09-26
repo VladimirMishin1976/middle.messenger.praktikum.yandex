@@ -1,0 +1,17 @@
+.side-bar__input {
+  width: 100%;
+  background: var(--field-bg-color);
+  border-radius: var(--small-border-radius);
+  outline: none;
+  border: none;
+  min-height: 32px;
+  margin: 23px 0 14px;
+}
+
+.side-bar__input::placeholder {
+  background: url(../asserts/search__icon.svg) no-repeat 40%;
+  font-size: 12px;
+  line-height: 1;
+  color: var(--shadow-text-color);
+  text-align: center;
+}

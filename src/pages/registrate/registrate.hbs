@@ -1,0 +1,44 @@
+{{!< main}} <main class="registrate flex-center-screen">
+  <section class="form-block">
+    <h1 class="login__title">Регистрация</h1>
+    <form class="form" name="registrate">
+
+      <label class="form__label">Почта
+        <input class="form__input" type="email" name="email" minlength='2' required value="pochta@yandex.ru">
+        <span class="form__input-error"></span>
+      </label>
+
+      <label class="form__label">Логин
+        <input class="form__input" type="text" name="login" minlength='2' required>
+        <span class="form__input-error"></span>
+
+      </label><label class="form__label">Имя
+        <input class="form__input" type="text" name="first_name" minlength='2' required>
+        <span class="form__input-error"></span>
+      </label>
+
+      <label class="form__label">Фамилия
+        <input class="form__input" type="text" name="second_name" minlength='2' required>
+        <span class="form__input-error"></span>
+      </label>
+
+      <label class="form__label">Телефон
+        <input class="form__input" type="number" name="phone" required>
+        <span class="form__input-error"></span>
+      </label>
+
+      <label class="form__label">Пароль
+        <input class="form__input" type="password" name="password" minlength='6' required>
+        <span class="form__input-error"></span>
+      </label>
+
+      <label class="form__label">Пароли не совпадают
+        <input class="form__input" type="password" name="password" minlength='6' required>
+        <span class="form__input-error">Пароли не совпадают</span>
+      </label>
+
+      {{> 'button-submit/button-submit' 'Зарегистрироваться'}}
+    </form>
+    <a class="form__link" href="../login/login.hbs">Войти</a>
+  </section>
+  </main>

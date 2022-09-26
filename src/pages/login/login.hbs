@@ -1,0 +1,20 @@
+{{!< main}} <main class="login flex-center-screen">
+  <section class="form-block">
+    <h1 class="login__title">Вход</h1>
+    <form class="form" name="login">
+
+      <label class="form__label">Логин
+        <input class="form__input" type="text" name="login" minlength='2' required>
+        <span class="form__input-error">Неверный логин или пароль</span>
+      </label>
+
+      <label class="form__label">Пароль
+        <input class="form__input" type="password" name="password" minlength='6' required>
+        <span class="form__input-error">Неверный логин или пароль</span>
+      </label>
+
+      {{> 'button-submit/button-submit' 'Авторизоваться' }}
+    </form>
+    <a class="form__link" href="../registrate/registrate.hbs">Нет аккаунта?</a>
+  </section>
+  </main>

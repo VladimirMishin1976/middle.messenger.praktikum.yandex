@@ -1,0 +1,29 @@
+.side-bar {
+  min-width: 330px;
+  background-color: var(--second-bg-color);
+  padding: 21px 10px;
+  border-right: var(--border-line);
+  height: calc(100vh - 20px);
+  box-sizing: border-box;
+  overflow-y: scroll;
+}
+
+.side-bar::-webkit-scrollbar {
+  width: 0;
+}
+
+.side-bar__form {
+  margin: 0;
+}
+
+.side-bar__link {
+  display: block;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1;
+  color: var(--shadow-text-color);
+  margin-left: auto;
+  width: max-content;
+  cursor: pointer;
+}
+

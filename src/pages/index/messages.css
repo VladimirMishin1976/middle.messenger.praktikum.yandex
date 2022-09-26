@@ -1,0 +1,85 @@
+.messages {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10px 20px;
+}
+
+.messages__header {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  border-bottom: var(--border-line);
+  padding-bottom: 10px;
+}
+
+.messages__avatar {
+  background-color: var(--field-bg-color);
+  border-radius: 50%;
+  min-width: 47px;
+  width: 47px;
+  height: 47px;
+}
+
+.messages__name {
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 1;
+  color: var(--main-text-color);
+  margin-right: auto;
+}
+
+.messages__form {
+  border-top: var(--border-line);
+  width: 100%;
+  padding-top: 11px;
+  display: flex;
+  gap: 9px;
+  align-items: center;
+}
+
+
+.messages__input {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1;
+  color: var(--main-text-color);
+  border: none;
+  background-color: var(--field-bg-color);
+  border-radius: var(--big-border-radius);
+  padding: 10px 20px;
+  flex-basis: 100%;
+}
+
+.messages__input::placeholder {
+  color: var(--shadow-text-color);
+}
+
+.messages__btn-submit {
+  background: url(../asserts/go-ahead.svg) no-repeat center;
+  width: 30px;
+  height: 28px;
+  outline: none;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.messages__field {
+  background-color: var(--main-bg-color);
+  flex-direction: column;
+  flex-basis: 100vh;
+  align-items: center;
+  padding: 48px 20px;
+  display: flex;
+  overflow-y: auto;
+}
+
+.messages__date {
+  color: var(--shadow-text-color);
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1;
+  margin: 0 0 40px 0;
+}

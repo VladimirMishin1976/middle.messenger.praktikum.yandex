@@ -1,0 +1,31 @@
+.profile__form {
+  flex-direction: column;
+  gap: 10px;
+  display: flex;
+  margin-bottom: 60px;
+}
+
+.profile__label {
+  width: 100%;
+  border-bottom: var(--border-line);
+  padding-bottom: 10px;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 1;
+  color: var(--main-text-color);
+  display: flex;
+  gap: 1em;
+}
+
+.profile__label:last-of-type {
+  border-bottom: none;
+}
+
+.profile__input {
+  border: none;
+  outline: none;
+  padding: 0;
+  text-align: right;
+  color: var(--shadow-text-color);
+  flex-basis: 100%;
+}

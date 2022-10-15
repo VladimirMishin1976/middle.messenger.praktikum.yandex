@@ -1,0 +1,73 @@
+.message {
+  position: relative;
+  width: max-content;
+  max-width: 402px;
+  min-width: 115px;
+  border-radius: 0 var(--medium-border-radius) var(--medium-border-radius) var(--medium-border-radius);
+  background-color: var(--second-bg-color);
+  padding: 11px 11px 16px 11px;
+  margin-bottom: 20px;
+  align-self: start;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.message_photo {
+  background-color: var(--main-bg-color);
+  border: var(--medium-border-radius);
+  border: var(--border-line);
+  padding: 0;
+  overflow: hidden;
+  min-height: 211px;
+}
+
+.message_own {
+  background-color: #e4edfd;
+  align-self: end;
+  border-radius: var(--medium-border-radius) var(--medium-border-radius) 0 var(--medium-border-radius);
+  align-self: end;
+  background-color: #E4EDFD;
+}
+
+.message__text {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.25;
+  color: var(--main-text-color);
+  margin: 0;
+}
+
+.message__time {
+  align-self: end;
+  color: var(--shadow-text-color);
+  font-size: 9px;
+  font-weight: 500;
+  line-height: 1;
+  margin: 0;
+  position: absolute;
+  bottom: 5px;
+  right: 10px;
+}
+
+.message__time_own {
+  color: var(--link-color);
+}
+
+.message__time_photo {
+  color: white;
+  background: rgba(82, 82, 82, 0.5);
+  border-radius: 30px;
+  padding: 2px 7px;
+}
+
+
+.message__photo {
+  width: 100%;
+  height: 100%;
+  object-fit: scale-down;
+}
+
+.message__checked {
+  margin-right: 4px;
+}

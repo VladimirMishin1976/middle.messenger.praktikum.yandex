@@ -1,0 +1,13 @@
+.button-submit {
+  max-width: 280px;
+  width: 100%;
+  background-color: var(--link-color);
+  color: #ffffff;
+  border-radius: 8px;
+  padding: 12px;
+  border: none;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 1;
+  color: #ffffff;
+}
